@@ -5,7 +5,7 @@ function TipCalculator() {
   const [tipPercentage, setTipPercentage] = useState(15);
   const [tipAmount, setTipAmount] = useState(0);
 
-  const calculateTip = () => {
+  const calculateTipe = () => {
     const bill = parseFloat(billAmount);
     const tip = (bill * tipPercentage) / 100;
     setTipAmount(tip);
@@ -15,7 +15,7 @@ function TipCalculator() {
     <div>
       <h1>Calculatrice de Pourboire</h1>
       <label>
-        Montant de la facture: 
+        Montant de la facture:
         <input
           type="number"
           value={billAmount}
@@ -33,7 +33,7 @@ function TipCalculator() {
         %
       </label>
       <br />
-      <button onClick={calculateTip}>Calculer le pourboire</button>
+      <button onClick={calculateTipe}>Calculer le pourboire</button>
       <p>Montant du pourboire: {tipAmount.toFixed(2)}</p>
     </div>
   );
